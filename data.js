@@ -85,7 +85,7 @@ const T = {
 
     footer_main: "🐾 回家计划 · 领养代替购买",
     footer_soft: "为每一只还在路上、还在等待的它。",
-    footer_org: "🐾 救助方：流浪动物发声（杭州）　·　小红书 / 微信：xinghan_001　·　Instagram：@voicesfordogsrescue",
+    footer_org: "🐾 救助方：流浪动物发声（杭州）　·　小红书 / 微信：xinghan_001　·　<a href='https://www.instagram.com/voicesfordogsrescue/' target='_blank' rel='noopener'>Instagram：@voicesfordogsrescue</a>",
 
     modal_title: "领养",
     m_lead: "想接 TA 回家？填一份正式申请表，记得备注上 TA 的名字，基地核实后会尽快联系你～",
@@ -263,7 +263,7 @@ const T = {
 
     footer_main: "🐾 Bring Them Home · Adopt, don't shop",
     footer_soft: "For every one still on the road, still waiting.",
-    footer_org: "🐾 Rescue partner: Voices for Dogs Rescue (Hangzhou)　·　RED / WeChat: xinghan_001　·　Instagram: @voicesfordogsrescue",
+    footer_org: "🐾 Rescue partner: Voices for Dogs Rescue (Hangzhou)　·　RED / WeChat: xinghan_001　·　<a href='https://www.instagram.com/voicesfordogsrescue/' target='_blank' rel='noopener'>Instagram: @voicesfordogsrescue</a>",
 
     modal_title: "Adopt",
     m_lead: "Ready to bring them home? Fill in the official application form and mention their name — the base will get back to you soon.",

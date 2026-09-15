@@ -35,7 +35,7 @@ function footerHtml() {
   return `<footer class="footer">
     <p data-t="footer_main"></p>
     <p class="footer-soft" data-t="footer_soft"></p>
-    <p class="footer-org" data-t="footer_org"></p>
+    <p class="footer-org" data-t-html="footer_org"></p>
   </footer>
   <a href="donate.html" class="donate-float" data-t="donate_float"></a>`;
 }
