@@ -11,10 +11,11 @@
   <meta property="og:title" content="回家计划 · 流浪狗狗领养 | Bring Them Home" />
   <meta property="og:description" content="邢姐流浪动物救助基地的领养平台——被救助的狗狗们在等一个家。领养代替购买。" />
   <meta property="og:url" content="https://homefurthem.org/" />
-  <meta property="og:image" content="https://homefurthem.org/assets/og.jpg" />
+  <meta property="og:image" content="https://homefurthem.org/assets/art/homeward-social.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="assets/art/home.svg" />
   <link rel="stylesheet" href="styles.css?v=16" />
+  <link rel="stylesheet" href="storybook.css?v=2" />
 </head>
 <body data-page="home">
   <main>
@@ -34,14 +35,30 @@
           <div><strong>2017</strong><span data-t="stat_year"></span></div>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true"><img src="assets/mascot.webp" alt="" class="mascot" /></div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/art/homeward.webp" srcset="assets/art/homeward-small.webp 720w, assets/art/homeward.webp 1440w" sizes="(max-width: 760px) 100vw, 58vw" width="1440" height="960" alt="" class="homeward-art" fetchpriority="high" />
+      </div>
+    </section>
+
+    <!-- 把参与入口放在基地长文前，让访客更快找到狗狗 -->
+    <section class="section entries">
+      <div class="section-head"><h2 data-t="home_entry_title"></h2></div>
+      <div class="entry-grid">
+        <a class="entry-card" href="dogs.html"><img class="entry-art" src="assets/art/dog.svg" alt="" width="64" height="64" aria-hidden="true" /><strong data-t="entry_dogs_t"></strong><span data-t="entry_dogs_d"></span><span class="entry-arrow" aria-hidden="true">↗</span></a>
+        <a class="entry-card" href="stories.html"><img class="entry-art" src="assets/art/book.svg" alt="" width="64" height="64" aria-hidden="true" /><strong data-t="entry_stories_t"></strong><span data-t="entry_stories_d"></span><span class="entry-arrow" aria-hidden="true">↗</span></a>
+        <a class="entry-card" href="foster.html"><img class="entry-art" src="assets/art/home.svg" alt="" width="64" height="64" aria-hidden="true" /><strong data-t="entry_foster_t"></strong><span data-t="entry_foster_d"></span><span class="entry-arrow" aria-hidden="true">↗</span></a>
+        <a class="entry-card" href="adopt.html"><img class="entry-art" src="assets/art/path.svg" alt="" width="64" height="64" aria-hidden="true" /><strong data-t="entry_adopt_t"></strong><span data-t="entry_adopt_d"></span><span class="entry-arrow" aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
     <!-- 关于基地 -->
     <section id="base" class="base">
       <div class="base-inner">
-        <p class="base-kicker" data-t="base_kicker"></p>
-        <h2 class="base-title" data-t="base_title"></h2>
+        <div class="base-intro">
+          <p class="base-kicker" data-t="base_kicker"></p>
+          <h2 class="base-title" data-t="base_title"></h2>
+          <img class="resting-art" src="assets/art/resting-dog.webp" width="720" height="480" alt="" aria-hidden="true" loading="lazy" />
+        </div>
         <div class="base-text">
           <p data-t="base_p1"></p>
           <p data-t="base_p2"></p>
@@ -52,18 +69,9 @@
       </div>
     </section>
 
-    <!-- 入口卡片 -->
-    <section class="section entries">
-      <div class="section-head"><h2 data-t="home_entry_title"></h2></div>
-      <div class="entry-grid">
-        <a class="entry-card" href="dogs.html"><span class="entry-emoji">🐕</span><strong data-t="entry_dogs_t"></strong><span data-t="entry_dogs_d"></span></a>
-        <a class="entry-card" href="stories.html"><span class="entry-emoji">📖</span><strong data-t="entry_stories_t"></strong><span data-t="entry_stories_d"></span></a>
-        <a class="entry-card" href="foster.html"><span class="entry-emoji">🤝</span><strong data-t="entry_foster_t"></strong><span data-t="entry_foster_d"></span></a>
-        <a class="entry-card" href="adopt.html"><span class="entry-emoji">📋</span><strong data-t="entry_adopt_t"></strong><span data-t="entry_adopt_d"></span></a>
-      </div>
-    </section>
   </main>
   <script src="data.js?v=26"></script>
-  <script src="app.js?v=13"></script>
+  <script src="app.js?v=15"></script>
+  <script src="ui-icons.js?v=1"></script>
 </body>
 </html>

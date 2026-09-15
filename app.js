@@ -23,11 +23,11 @@ function navHtml(page) {
   const links = items.map(([p, href, key]) =>
     `<a href="${href}" class="${p === "donate" ? "nav-donate" : ""}${p === page ? " active" : ""}" data-t="${key}"></a>`).join("");
   return `<header class="nav">
-    <a class="brand" href="index.html"><span class="brand-logo">🐾</span><span class="brand-name" data-t="brand"></span></a>
-    <button class="nav-toggle" id="navToggle" aria-label="menu">☰</button>
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/art/home.svg" width="39" height="39" alt="" aria-hidden="true" /><span class="brand-name" data-t="brand"></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu / 菜单" aria-expanded="false" aria-controls="navLinks">☰</button>
     <nav class="nav-links" id="navLinks">${links}
-      <button id="langBtn" class="lang-pill" title="切换语言 / Switch language">🌐 <span data-t="langBtn"></span></button>
-      <button id="favBtn" class="fav-pill" data-t-title="fav_title">❤️ <span id="favCount">0</span></button>
+      <button id="langBtn" class="lang-pill" title="切换语言 / Switch language" aria-label="切换语言 / Switch language">🌐 <span data-t="langBtn"></span></button>
+      <button id="favBtn" class="fav-pill" data-t-title="fav_title" aria-label="${t("fav_title")}">❤️ <span id="favCount">0</span></button>
     </nav>
   </header>`;
 }
@@ -313,6 +313,8 @@ function renderFoster() {
 // ===== 首页入口卡片 =====
 function renderHome() {
   if ($("#statTotal")) $("#statTotal").textContent = DOGS.length;
+  const entryCount = document.querySelector('[data-t="entry_dogs_d"]');
+  if (entryCount) entryCount.textContent = t("entry_dogs_d").replace(/^\d+/, String(DOGS.length));
 }
 
 // ===== 详情弹窗 =====
@@ -379,7 +381,10 @@ function bindChrome() {
     location.reload();
   });
   const navToggle = $("#navToggle");
-  if (navToggle) navToggle.addEventListener("click", () => $("#navLinks").classList.toggle("open"));
+  if (navToggle) navToggle.addEventListener("click", () => {
+    const open = $("#navLinks").classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
   const drawer = $("#drawer");
   $("#favBtn").addEventListener("click", () => { renderFavList(); drawer.hidden = false; });
   drawer.addEventListener("click", (e) => { if (e.target.hasAttribute("data-close-drawer")) drawer.hidden = true; });
