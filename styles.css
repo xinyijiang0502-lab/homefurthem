@@ -584,3 +584,5 @@ img { display: block; max-width: 100%; }
 .adopt-links{display:flex;flex-direction:column;gap:12px;margin-top:16px}
 .adopt-lead{line-height:1.9;font-size:15px}
 .adopt-note{font-size:13px;opacity:.65;text-align:center;margin-top:2px}
+
+.health-note { margin: 8px 0 0; font-size: 13px; line-height: 1.6; color: var(--soft-text); }

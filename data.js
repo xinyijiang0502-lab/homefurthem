@@ -35,7 +35,7 @@ const T = {
     base_p5: "但救助就像开弓没有回头箭——收容所不停地有新的狗狗被收容进来，需要更多有爱的领养人，才能让这些本已走投无路的狗狗活下来。",
 
     dogs_title: "等待领养的毛孩子",
-    dogs_sub: "它们都已绝育、驱虫、接种疫苗，只差一个你。",
+    dogs_sub: "基地会为每只狗狗完成驱虫和疫苗，绝育情况以各自档案为准。它们只差一个你。",
     f_size_all: "全部体型", f_small: "小型", f_medium: "中型", f_large: "大型",
     f_age_all: "全部年龄", f_puppy: "幼犬", f_adult: "成犬", f_senior: "老年犬",
     empty: "这个条件下暂时没有狗狗，换个筛选看看吧 🐾",
@@ -112,6 +112,7 @@ const T = {
     health_vaccine: "已接种疫苗",
     health_checkup: "已体检",
     neuter_done: "已绝育", neuter_pending: "绝育进行中", neuter_no: "未绝育", neuter_unknown: "绝育待确认",
+    health_base_note: "驱虫、疫苗与体检是基地的常规照护；如需某只狗狗的具体记录，沟通时可向志愿者了解。",
     detail_region_note: "✅ 欧洲 / 加拿大开放领养，可协助跨国送养",
     detail_adopt: "我想领养它",
     detail_more: "查看详情",
@@ -212,7 +213,7 @@ const T = {
     base_p5: "But rescue is an arrow that can't be called back — the pound keeps taking in new dogs, and it takes more loving adopters to give these otherwise hopeless dogs a chance to live.",
 
     dogs_title: "Dogs Waiting to Be Adopted",
-    dogs_sub: "All vaccinated, dewormed and neutered — they're only missing you.",
+    dogs_sub: "Dewormed and vaccinated as part of the base's routine care — see each profile for spay/neuter status. They're only missing you.",
     f_size_all: "All sizes", f_small: "Small", f_medium: "Medium", f_large: "Large",
     f_age_all: "All ages", f_puppy: "Puppy", f_adult: "Adult", f_senior: "Senior",
     empty: "No dogs match this filter — try another 🐾",
@@ -289,6 +290,7 @@ const T = {
     health_vaccine: "Vaccinated",
     health_checkup: "Health-checked",
     neuter_done: "Neutered", neuter_pending: "Neutering in progress", neuter_no: "Not neutered", neuter_unknown: "Spay/neuter TBC",
+    health_base_note: "Deworming, vaccination and check-ups are routine care at the base — ask us for any dog's records.",
     detail_region_note: "✅ Open to Europe / Canada — we help arrange international rehoming",
     detail_adopt: "I want to adopt",
     detail_more: "View details",

@@ -321,8 +321,7 @@ function renderHome() {
 function healthRow(dog) {
   const n = neuterInfo(dog);
   const neuterPill = `<span class="health-pill ${n.cls === "done" ? "" : "tbc"}">${n.icon} ${t(n.key)}</span>`;
-  const rest = ["health_dewormed", "health_vaccine", "health_checkup"].map((k) => `<span class="health-pill">✅ ${t(k)}</span>`).join("");
-  return neuterPill + rest;
+  return neuterPill + `<p class="health-note">${t("health_base_note")}</p>`;
 }
 function openDetail(id) {
   const dog = DOGS.find((d) => d.id === id); if (!dog) return;
