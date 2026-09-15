@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>待领养狗狗 · 回家计划</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css?v=1" />
+  <meta name="description" content="按体型、年龄、性格筛选,找到和你有缘的那一只。每只狗狗都被好好照顾着,等你带TA回家。" />
+  <meta property="og:site_name" content="回家计划 Bring Them Home" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="待领养狗狗 · 回家计划" />
+  <meta property="og:description" content="按体型、年龄、性格筛选,找到和你有缘的那一只。每只狗狗都被好好照顾着,等你带TA回家。" />
+  <meta property="og:url" content="https://homefurthem.org/dogs.html" />
+  <meta property="og:image" content="https://homefurthem.org/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+  <link rel="stylesheet" href="styles.css?v=16" />
+</head>
+<body data-page="dogs">
+  <main>
+    <section id="dogs" class="section page-section">
+      <div class="section-head">
+        <h2 data-t="dogs_title"></h2>
+        <p data-t="dogs_sub"></p>
+      </div>
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input id="searchInput" type="search" autocomplete="off" data-t-ph="search_ph" />
+        <button id="clearFilters" class="clear-filters" type="button" hidden data-t="clear_filters"></button>
+      </div>
+      <div class="filters" id="filters">
+        <div class="filter-group" data-filter="size">
+          <button class="chip active" data-value="all" data-t="f_size_all"></button>
+          <button class="chip" data-value="small" data-t="f_small"></button>
+          <button class="chip" data-value="medium" data-t="f_medium"></button>
+          <button class="chip" data-value="large" data-t="f_large"></button>
+        </div>
+        <div class="filter-group" data-filter="age">
+          <button class="chip active" data-value="all" data-t="f_age_all"></button>
+          <button class="chip" data-value="puppy" data-t="f_puppy"></button>
+          <button class="chip" data-value="adult" data-t="f_adult"></button>
+          <button class="chip" data-value="senior" data-t="f_senior"></button>
+        </div>
+      </div>
+      <div class="tag-filter">
+        <span class="tag-filter-label" data-t="f_tag_label"></span>
+        <div class="tag-filter-chips" id="tagFilter"></div>
+      </div>
+      <p class="result-count" id="resultCount"></p>
+      <div class="grid" id="dogGrid"></div>
+      <p class="empty" id="emptyState" data-t="empty" hidden></p>
+    </section>
+  </main>
+  <script src="data.js?v=26"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>
