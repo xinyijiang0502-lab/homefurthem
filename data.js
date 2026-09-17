@@ -113,6 +113,8 @@ const T = {
     health_checkup: "已体检",
     neuter_done: "已绝育", neuter_pending: "绝育进行中", neuter_no: "未绝育", neuter_unknown: "绝育待确认",
     health_base_note: "驱虫、疫苗与体检是基地的常规照护；如需某只狗狗的具体记录，沟通时可向志愿者了解。",
+    urgent_badge: "急寻家",
+    urgent_note: "收容所笼位已满、去留岌岌可危，TA属于最需要尽快离开收容所的一批——每一天都很关键。",
     detail_region_note: "✅ 欧洲 / 加拿大开放领养，可协助跨国送养",
     detail_adopt: "我想领养它",
     detail_more: "查看详情",
@@ -289,6 +291,8 @@ const T = {
     health_checkup: "Health-checked",
     neuter_done: "Neutered", neuter_pending: "Neutering in progress", neuter_no: "Not neutered", neuter_unknown: "Spay/neuter TBC",
     health_base_note: "Deworming, vaccination and check-ups are routine care at the base — ask us for any dog's records.",
+    urgent_badge: "Urgent",
+    urgent_note: "The city pound is completely full and places there are precarious — this dog is among those who most urgently need a way out. Every day counts.",
     detail_region_note: "✅ Open to Europe / Canada — we help arrange international rehoming",
     detail_adopt: "I want to adopt",
     detail_more: "View details",
@@ -479,7 +483,7 @@ const DOGS = [
       more: "Huahu is neutered and dewormed, with his vaccinations in progress (first and second shots completed). Since he tends to guard his food, it's best to give him his own quiet space at mealtimes." },
   },
   {
-    id: "bxfcbge7k1eegikr", age: "adult", size: "medium", neuter: "done", img: "assets/dogs/d_bxfcbge7k1eegikr.jpg",
+    id: "bxfcbge7k1eegikr", age: "adult", size: "medium", neuter: "done", urgent: true, img: "assets/dogs/d_bxfcbge7k1eegikr.jpg",
     zh: { name: "金宝", breed: "田园犬", gender: "弟弟", ageText: "成犬", tags: ["慢热", "温柔", "乖巧"],
       story: "金宝是一只一岁左右的田园犬弟弟，2025年10月被收容救助。他有点怕生，刚见面时会小心翼翼地观察，但只要给他一点时间和耐心，温柔乖巧的一面就会慢慢显露出来。他在等一个愿意慢慢靠近、不催不赶的家，用稳稳的陪伴帮他建立起对人的信任。",
       more: "金宝已绝育、已驱虫，三针疫苗（1.12、2.2、3.8）已全部接种完成，体重约13公斤，健康状况良好。" },
@@ -488,7 +492,7 @@ const DOGS = [
       more: "Jinbao is neutered, dewormed, and has completed his full course of three vaccinations (Jan 12, Feb 2, Mar 8). He weighs about 13 kg and is in good health." },
   },
   {
-    id: "zwgv5wt2cn98sxhu", age: "adult", size: "medium", neuter: "done", img: "assets/dogs/d_zwgv5wt2cn98sxhu.jpg?2",
+    id: "zwgv5wt2cn98sxhu", age: "adult", size: "medium", neuter: "done", urgent: true, img: "assets/dogs/d_zwgv5wt2cn98sxhu.jpg?2",
     zh: { name: "仙草", breed: "田园串串", gender: "妹妹", ageText: "成犬", tags: ["粘人", "护家", "认主"],
       story: "仙草是一只约1-2岁的田园妹妹，曾经做了妈妈，护崽心切的她在宝宝刚出生时为了保护孩子咬了执意逗弄的邻居，却被原主人推出门外、扬言要让人把她抓走。其实她对认定的人无比忠诚，熟悉的师傅在身边时，乖乖让人梳毛、温顺听话。她需要一个有耐心、愿意慢慢和她建立信任的家，给她足够的安全感，她会用全部的忠心回报。 常来的师傅说，隔着笼子递点好吃的，她就会回你一个笑脸——一位爱窝在角落晒太阳的优雅女士，笑起来真的很好看。",
       more: "仙草已绝育，疫苗与驱虫都已完成。她认主、护家，新家庭需要给她时间慢慢熟悉。" },
@@ -497,7 +501,7 @@ const DOGS = [
       more: "Xiancao is spayed, fully vaccinated and dewormed. Deeply loyal to her person and protective of home — give her time to warm up, and she is yours." },
   },
   {
-    id: "umlwhgkdqi9xduvb", age: "adult", size: "large", neuter: "done", img: "assets/dogs/d_umlwhgkdqi9xduvb.jpg",
+    id: "umlwhgkdqi9xduvb", age: "adult", size: "large", neuter: "done", urgent: true, img: "assets/dogs/d_umlwhgkdqi9xduvb.jpg",
     zh: { name: "肉桂", breed: "田园串串", gender: "妹妹", ageText: "成犬", tags: ["慢热", "胆小", "温柔"],
       story: "肉桂是一只年轻的田园妹妹，被城管抓进收容所时还涨着奶，孩子们却不知所踪，只剩她独自缩在笼子里满脸愁容。她生性胆小，受了惊会缩成一团、甚至因为害怕而护住自己，但那只是流浪和失去带给她的不安。她需要一个安静有耐心的家，愿意慢慢陪她卸下防备，让她重新相信人。等她放下戒心，会是个温柔又依恋的姑娘。",
       more: "肉桂已绝育，疫苗齐（2026年3月补打）、驱虫已完成。她目前较为敏感胆小，初期请给她足够的空间和时间适应新环境。" },
@@ -506,7 +510,7 @@ const DOGS = [
       more: "Rougui is spayed, fully vaccinated (boosters March 2026) and dewormed. Still timid and sensitive, she needs plenty of space and time to settle in at first." },
   },
   {
-    id: "unpksaku8schwtvg", age: "adult", size: "medium", neuter: "done", img: "assets/dogs/d_unpksaku8schwtvg.jpg",
+    id: "unpksaku8schwtvg", age: "adult", size: "medium", neuter: "done", urgent: true, img: "assets/dogs/d_unpksaku8schwtvg.jpg",
     zh: { name: "贝多芬", breed: "田园串串", gender: "妹妹", ageText: "成犬", tags: ["慢热", "胆小", "温柔"],
       story: "贝多芬是只一头潦草长毛的小妹妹，2025年6月被收容时刚满1岁多。刚来的时候她又凶又怕人，靠近就会炸毛，其实只是没安全感的本能反应。慢慢熟悉之后，她露出了原本的样子——安静时格外好看，没人打扰时是个慢吞吞、憨憨的小姑娘，最近脾气也越来越软。她需要一个有耐心、愿意慢慢陪她卸下防备的家。 最近的贝多芬进步很大：已经愿意让熟悉的师傅靠近抚摸，很享受被梳毛的时光；师傅给她剪了毛，终于露出了她原本可爱的样子。",
       more: "贝多芬已绝育，疫苗齐（2026年3月补打）、驱虫已完成。她仍可能因紧张出现自我保护反应，初期请给她足够空间与适应时间。" },
@@ -515,7 +519,7 @@ const DOGS = [
       more: "Beethoven is spayed, fully vaccinated (boosters March 2026) and dewormed. She may still act defensively when nervous, so give her space and time to adjust at first." },
   },
   {
-    id: "wmbo1f52mtn2nyx8", age: "adult", size: "medium", neuter: "done", img: "assets/dogs/d_wmbo1f52mtn2nyx8.jpg",
+    id: "wmbo1f52mtn2nyx8", age: "adult", size: "medium", neuter: "done", urgent: true, img: "assets/dogs/d_wmbo1f52mtn2nyx8.jpg",
     zh: { name: "五筒", breed: "田园串串", gender: "妹妹", ageText: "成犬", tags: ["亲人", "温柔", "乖巧"],
       story: "五筒是个圆圆胖胖的小姑娘，笑起来眼睛弯弯的，一脸藏不住的好脾气。2024年6月，她和一窝九只奶狗一起被抓进城管收容所，那时它们还没断奶、连眼睛都没睁开，是被一路守护着才长到今天。如今的五筒亲人又乖巧，温柔得让人忍不住想抱抱。她在等一个不离不弃的家，愿意给她稳稳的陪伴和一生的疼爱。 前不久，和她同窝的姐妹四筒终于离开了收容所，学会了用牵引绳，胆子也大了许多——而五筒还留在原地，等属于她的那个人。长期笼养让她的腿可能有些肌肉萎缩，需要新家慢慢陪她散步复健。",
       more: "五筒已绝育，已免疫、已驱虫，狂犬疫苗于2024年9月接种，健康状况良好。她体型中等、略微圆润，日常注意均衡饮食和适量运动即可。" },
@@ -524,7 +528,7 @@ const DOGS = [
       more: "Wutong is spayed, fully vaccinated and dewormed, with her rabies shot given in September 2024, and she's in good health. She's a medium-sized girl on the rounder side, so a balanced diet and regular exercise are all she needs." },
   },
   {
-    id: "xmznp3vhbvtan1t9", age: "adult", size: "medium", neuter: "done", img: "assets/dogs/d_xmznp3vhbvtan1t9.jpg",
+    id: "xmznp3vhbvtan1t9", age: "adult", size: "medium", neuter: "done", urgent: true, img: "assets/dogs/d_xmznp3vhbvtan1t9.jpg",
     zh: { name: "小天", breed: "田园串串", gender: "妹妹", ageText: "成犬", tags: ["温柔", "亲人", "胆小"],
       story: "小天是一只特别温柔的妹妹，五岁左右，被收容时身上带着不少旧伤。她的前肢有些残疾，前爪甚至能往后折起，走起路来软软的；声带受过损伤，叫声有些嘶哑，牙齿也长得不太整齐。也正因为这样，她在狗群里总被欺负，见到别的狗就害怕得往后躲。她需要一个安静、有耐心的家，让她不必再担惊受怕，慢慢被好好疼爱。",
       more: "小天已绝育，疫苗齐、驱虫已完成。她的前肢与声带有旧伤、牙齿不齐，行动稍有不便但生活能自理，需要平地、无台阶的安稳环境。" },
@@ -801,6 +805,34 @@ const DOGS = [
     en: { name: "Yuanbao", breed: "Native mix", gender: "Girl", ageText: "Senior", tags: ["Friendly", "Affectionate", "Gentle"],
       story: "Yuanbao is a sweet-natured girl who, the story goes, was abandoned near the Jiande sports stadium by an elderly couple in late 2018, and has been drifting ever since. After her rescue, the vet found that one of her eyes had shrunk and her heart was enlarged, and the shelter food has left her a little round — yet she stays so affectionate and loves to smile. She has been waiting all these years for a home of her own, hoping for a patient, loving person to give her a calm and settled life from here on.",
       more: "Yuanbao is spayed, dewormed, and fully vaccinated. She has one atrophied eye and an enlarged heart, and is a bit overweight, so she'll need a light diet and regular checkups along with some attentive care." },
+  }
+,
+  {
+    id: "qezclvgi0e390mu8", age: "puppy", size: "medium", neuter: "no", img: "assets/dogs/d_qezclvgi0e390mu8.jpg",
+    zh: { name: "黑蛋", breed: "串串", gender: "弟弟", ageText: "幼犬", tags: ["活泼", "高能量", "小调皮"],
+      story: "黑蛋是2026年5月才出生的小朋友，8月被新安江中队收容，现在也才几个月大。师傅提起他，第一句话就是：这小家伙可调皮了——精力旺盛、好奇心重，看到什么都想凑过去研究，放出来就一刻不停；给他戴个小帽子，他也能顶着帽子到处晃，一脸没心没肺的开心。其实所谓调皮，不过是一只小狗最正常的样子——他正处在最爱玩、最爱探索、也最适合学家庭规矩的年纪。",
+      more: "黑蛋约7.8公斤，驱虫疫苗进行中，未绝育（还小，建议成年后安排）。如果有人愿意耐心教他散步、定点、和人相处，他完全有机会从收容所里的「调皮蛋」，变成家里每天制造笑料的小朋友——希望他不用在笼子里长大。" },
+    en: { name: "Heidan", breed: "Mixed", gender: "Boy", ageText: "Puppy", tags: ["Playful", "High energy", "Little rascal"],
+      story: "Heidan was born around May 2026 and taken in by the Xinanjiang team in August — he is only a few months old. Ask his caretaker about him and the first thing you hear is: this little guy is a handful — endlessly energetic, curious about everything, never still for a second once he is out. Pop a little hat on him and he will happily trot around wearing it, beaming without a care. But naughty is really just what a healthy puppy looks like — he is at exactly the age for playing, exploring, and learning house rules.",
+      more: "About 7.8 kg; deworming and vaccinations in progress; not yet neutered (recommended once grown). With someone patient enough to teach him walks, potty training and manners, the shelter rascal could become the kid who makes your family laugh every day — we hope he does not have to grow up in a kennel." }
+  },
+  {
+    id: "xium6150s7s25tpy", age: "adult", size: "small", neuter: "done", img: "assets/dogs/d_xium6150s7s25tpy.jpg",
+    zh: { name: "拉克", breed: "串串", gender: "弟弟", ageText: "成犬", tags: ["安静", "慢热", "重感情"],
+      story: "拉克以前应该是有过家的。他不怕人，知道有人靠近时要乖乖坐好，被收容时脖子上还留着项圈——像是走丢之后，一直在等熟悉的人来找他。可他等来的不是主人，而是收容车。刚进笼子的日子，他总盯着门口，每次有人经过都立刻抬头，以为终于有人来接自己；等人走远了，又慢慢趴回去。他看起来有些忧郁，需要一点耐心——也许，你可以成为那个真的会来接他的人。",
+      more: "拉克已绝育，约10公斤，驱虫疫苗进行中。他安静内敛、重感情，适合一个温和、有耐心、愿意每天都回家的人。" },
+    en: { name: "Lake", breed: "Mixed", gender: "Boy", ageText: "Adult", tags: ["Quiet", "Slow to warm up", "Devoted"],
+      story: "Lake almost certainly had a home once. He is not afraid of people, he knows to sit politely when someone approaches, and he still wore a collar when he was brought in — as if he had gotten lost and kept waiting for someone familiar to come find him. What came instead was the shelter truck. In his first days in the kennel he watched the door constantly, lifting his head at every passing footstep, sure someone had finally come for him — then slowly lying back down as they faded. He is a quiet, wistful boy who needs a little patience. Perhaps you could be the one who really does come for him.",
+      more: "Lake is neutered, about 10 kg, with deworming and vaccinations in progress. Calm, reserved and deeply loyal, he would thrive with a gentle, patient person who comes home to him every day." }
+  },
+  {
+    id: "kgt1gtpgocsnabvx", age: "puppy", size: "large", neuter: "done", img: "assets/dogs/d_kgt1gtpgocsnabvx.jpg",
+    zh: { name: "白泽（法兰克福中转）", breed: "金毛串", gender: "妹妹", ageText: "幼犬", tags: ["亲人", "活泼", "温柔"],
+      story: "白泽是一位金毛串串小姑娘，半岁到一岁，已经在德国法兰克福的中转家庭生活。她的相册里全是快乐——在麦田边撒欢，坐在绣球花旁吐着舌头拍照，已经很有「别人家孩子」的气质。她正在中转家庭里学着做一只家庭犬，等一个真正属于自己的家。",
+      more: "白泽约25公斤，已绝育、疫苗齐，目前在法兰克福中转家庭。身在欧洲的朋友如果想认识她，欢迎联系我们。" },
+    en: { name: "Baize (Frankfurt foster)", breed: "Golden mix", gender: "Girl", ageText: "Puppy", tags: ["Affectionate", "Playful", "Gentle"],
+      story: "Baize is a golden-mix girl, six months to a year old, already living with a foster family in Frankfurt, Germany. Her photo album is pure joy — romping beside wheat fields, posing by the hydrangeas with her tongue out, every inch the model family dog in training. At her foster home she is learning what home life feels like, while waiting for a family to call her own.",
+      more: "Around 25 kg, spayed and fully vaccinated, currently fostered in Frankfurt. If you are in Europe and would like to meet her, please get in touch." }
   }
 ];
 

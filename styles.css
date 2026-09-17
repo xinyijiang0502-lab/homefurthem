@@ -589,3 +589,6 @@ img { display: block; max-width: 100%; }
 
 .footer-org a { color: #ad592e; text-decoration: underline; text-underline-offset: 3px; }
 .footer-org a:hover { color: #95451e; }
+
+.urgent-chip { position: absolute; top: 10px; left: 10px; background: #b3402f; color: #fff; font-size: 13px; font-weight: 600; padding: 4px 12px; border-radius: 999px; letter-spacing: .5px; box-shadow: 0 2px 8px rgba(120,40,25,.25); }
+.urgent-note { background: #fbe7dc; border-left: 3px solid #b3402f; padding: 10px 14px; border-radius: 8px; color: #7a3b2e; font-size: 14px; line-height: 1.7; margin: 10px 0 4px; }

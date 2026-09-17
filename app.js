@@ -115,7 +115,7 @@ function dogCard(dog) {
       <div class="card-img">
         <img src="${dog.img}" alt="${L.name}" loading="lazy" ${dog.imgPos ? `style="object-position:${dog.imgPos}"` : ""} ${IMG_FALLBACK} />
         <button class="heart ${faved ? "on" : ""}" data-fav="${dog.id}" aria-label="fav">❤</button>
-        <span class="card-gender">${L.gender}</span>
+        <span class="card-gender">${L.gender}</span>${dog.urgent ? `<span class="urgent-chip">${t("urgent_badge")}</span>` : ""}
       </div>
       <div class="card-body" data-open="${dog.id}">
         <div class="card-top"><h3>${L.name}</h3><span class="card-breed">${L.breed}</span></div>
@@ -135,7 +135,7 @@ function dogCard(dog) {
 }
 function renderDogs() {
   if (!$("#dogGrid")) return;
-  const list = DOGS.filter(matches);
+  const list = DOGS.filter(matches).sort((a, b) => (b.urgent ? 1 : 0) - (a.urgent ? 1 : 0));
   $("#dogGrid").innerHTML = list.map(dogCard).join("");
   $("#emptyState").hidden = list.length > 0;
   if ($("#statTotal")) $("#statTotal").textContent = DOGS.length;
@@ -333,6 +333,7 @@ function openDetail(id) {
     <div class="detail-content">
       <div class="detail-head"><h2>${L.name}</h2><span class="card-breed">${L.breed}</span></div>
       <div class="detail-meta"><span>${t("card_birth")} ${L.ageText}</span><span>${t("card_size")} ${sizeLabel(dog.size)}</span></div>
+      ${dog.urgent ? `<p class="urgent-note">${t("urgent_note")}</p>` : ""}
       <h4 class="detail-sub">${t("detail_about")}</h4><p class="detail-text">${L.story}</p>${L.more ? `<p class="detail-text">${L.more}</p>` : ""}
       <h4 class="detail-sub">${t("detail_personality")}</h4><div class="card-tags">${L.tags.map((tg) => `<span class="tag">${tg}</span>`).join("")}</div>
       <h4 class="detail-sub">${t("detail_health")}</h4><div class="health-row">${healthRow(dog)}</div>
