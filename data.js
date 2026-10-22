@@ -836,6 +836,52 @@ const DOGS = [
       story: "Beer is a golden retriever boy of about one year, taken in by the Shouchang team in September 2026. A golden turning up at a city pound is a rare sight — no one knows how he ended up a stray, only that he brought the full golden temperament with him: hugely affectionate, leaning right into every hand that pets him, a bright and bouncy big boy. On photo day he wore a little lace collar and posed chin-up like a natural. A one-year-old golden is at peak energy and peak learning speed — may his next stop be not a kennel, but a family with room to run.",
       more: "About 16.5 kg; health records being established; neuter status to be confirmed. A high-energy boy who needs a family with real time for walks and play." }
   }
+,
+  {
+    id: "vc8m1mzukyyrac6x", age: "adult", size: "small", neuter: "unknown", img: "assets/dogs/d_vc8m1mzukyyrac6x.jpg",
+    zh: { name: "枫糖", breed: "串串", gender: "妹妹", ageText: "年龄待确认", tags: ["温柔", "乖巧", "慢热"],
+      story: "枫糖是10月18日拍照日被大家记住的温柔面孔:她一开始怕人,可师傅摸了一下头,她就不发抖了——牵着也能乖乖走。师傅的性格鉴定核心就一个字,出现了两次:乖。照片里的她戴着蕾丝花边围脖坐在草木间,眼神有点小心,又忍不住想信任。档案还在补齐的路上,但这份温柔已经先一步说明了一切。",
+      more: "枫糖基本档案完善中(年龄体重待志愿者补充),性格温和乖巧,摸一下头就安心。先记住这张脸,详情很快补上。" },
+    en: { name: "Maple", breed: "Mixed", gender: "Girl", ageText: "Age TBC", tags: ["Gentle", "Well-behaved", "Slow to warm up"],
+      story: "Maple is the gentle face everyone remembered from the October photo day: shy of people at first — but one touch on the head and the trembling stopped, and she walked sweetly on leash. Her entire temperament report boils down to one word, twice: good. In her photo she sits among the greenery in a lace collar, eyes careful yet longing to trust. Her paperwork is still catching up; her gentleness has already said everything.",
+      more: "Records still being completed (age and weight to come). A gentle, well-mannered girl — remember this face; details follow soon." }
+  },
+  {
+    id: "fg2he4fgsufs7uto", age: "puppy", size: "small", neuter: "unknown", img: "assets/dogs/d_fg2he4fgsufs7uto.jpg",
+    zh: { name: "乐事", breed: "串串", gender: "妹妹", ageText: "幼犬", tags: ["活泼", "亲人", "高能量"],
+      story: "乐事是只黑色小奶狗,和弟弟百事是一对「零食组合」。师傅鉴定:活泼,喜欢咬手(奶狗换牙期的标准配置),给摸给抱都很可爱。照片里她顶着一头没梳开的奶毛,系着粉花围巾,一双大眼睛往上看——流浪还没来得及教她怕人,她还活在「全世界都该抱我」的年纪。",
+      more: "乐事档案完善中,正处奶狗阶段,轻咬手指需要温柔引导。和百事是同窝姐弟,能一起领养更热闹。" },
+    en: { name: "Lays", breed: "Mixed", gender: "Girl", ageText: "Puppy", tags: ["Playful", "Affectionate", "High energy"],
+      story: "Lays is a tiny black puppy, one half of the snack duo with her brother Pepsi. The report: lively, a hand-nibbler (standard issue for a teething pup), adorable whether petted or held. In her photo she wears a pink floral bandana under a head of untamed puppy fluff, big eyes turned upward — the streets never got the chance to teach her fear; she still lives at the age where the whole world owes her a cuddle.",
+      more: "Records in progress; very much a puppy, with gentle mouthing to train out. Littermates with Pepsi — adopting the duo doubles the fun." }
+  },
+  {
+    id: "euqmt8ikc4wozqxa", age: "puppy", size: "small", neuter: "unknown", img: "assets/dogs/d_euqmt8ikc4wozqxa.jpg",
+    zh: { name: "百事", breed: "串串", gender: "弟弟", ageText: "幼犬", tags: ["活泼", "亲人", "高能量"],
+      story: "百事是乐事的弟弟,黑色小奶狗二号,拍照当天贡献了最佳表情——一小节粉舌头忘了收回去。鉴定词和姐姐共用:活泼小奶狗,喜欢咬手,给摸给抱很可爱。四只白袜子配一脸小胡茬,是个自带喜剧感的小男孩。",
+      more: "百事档案完善中,奶狗阶段。和乐事同窝,组合领养热烈欢迎。" },
+    en: { name: "Pepsi", breed: "Mixed", gender: "Boy", ageText: "Puppy", tags: ["Playful", "Affectionate", "High energy"],
+      story: "Pepsi is Lays little brother, black puppy number two, and author of photo day best expression — a small pink tongue he forgot to put away. He shares his sister report word for word: lively pup, hand-nibbler, adorable held or petted. Four white socks and a scruffy little beard — a boy born with comic timing.",
+      more: "Records in progress; still a young pup. Littermates with Lays — package adoption warmly encouraged." }
+  },
+  {
+    id: "kz9beb2qkd5q6424", age: "puppy", size: "medium", neuter: "unknown", img: "assets/dogs/d_kz9beb2qkd5q6424.jpg",
+    zh: { name: "雪顶", breed: "串串", gender: "弟弟", ageText: "幼犬", tags: ["活泼", "高能量", "勇敢"],
+      story: "雪顶9月18日被新安江中队收容,得过细小——扛过来了,小小年纪已经打赢一场硬仗。现在的他精力满格:见人就围着跑来跑去,一刻静不下来;唯一的未修课程是牵引绳,一拽就地趴下罢工,需要一位耐心的陪练。照片里他趴着啃玩具,抬眼的瞬间,满眼都是故事。",
+      more: "雪顶约8.6公斤,细小已康复,疫苗驱虫进行中。高能量选手,需要能陪跑陪练的家庭;牵引绳课程进行中。" },
+    en: { name: "Snowcap", breed: "Mixed", gender: "Boy", ageText: "Puppy", tags: ["Playful", "High energy", "Brave"],
+      story: "Snowcap was taken in on September 18 and beat parvovirus — a hard battle won very young. Now he runs at full charge, circling every person he meets, never still for a second. His one unfinished course is leash training: one tug and he flops down on strike, awaiting a patient coach. In his photo he gnaws a toy and glances up with eyes full of story.",
+      more: "About 8.6 kg; recovered from parvo, vaccinations in progress. A high-energy boy for a family up for exercise and training — leash skills in progress." }
+  },
+  {
+    id: "glynstudrlpywncg", age: "puppy", size: "small", neuter: "unknown", img: "assets/dogs/d_glynstudrlpywncg.jpg",
+    zh: { name: "黑松露", breed: "串串", gender: "妹妹", ageText: "幼犬", tags: ["活泼", "亲人", "高能量"],
+      story: "黑松露是只灰棕花纹的小旋风,9月18日被收容,也得过细小,也赢了。师傅的鉴定读起来像天气预报:特别活泼,高精力,给摸给抱,一直围着你跑来跑去。照片里被举起来的她咧着嘴吐着舌头,笑得毫无保留——大病初愈的小狗笑起来,比谁都用力。",
+      more: "黑松露约6公斤,细小已康复,疫苗驱虫进行中。小旋风体质,适合爱热闹、有时间陪玩的家庭。" },
+    en: { name: "Truffle", breed: "Mixed", gender: "Girl", ageText: "Puppy", tags: ["Playful", "Affectionate", "High energy"],
+      story: "Truffle is a little brindle whirlwind, taken in on September 18 — another parvo survivor, another win. Her caretaker report reads like a weather bulletin: extremely lively, high energy, loves pets and hugs, orbits you nonstop. Held up for her photo she grins, tongue out, holding nothing back — a puppy fresh from beating illness smiles harder than anyone.",
+      more: "About 6 kg; recovered from parvo, vaccinations in progress. Whirlwind spec — best for a lively household with real playtime." }
+  }
 ];
 
 const STORIES = [
