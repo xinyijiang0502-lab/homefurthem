@@ -882,6 +882,25 @@ const DOGS = [
       story: "Truffle is a little brindle whirlwind, taken in on September 18 — another parvo survivor, another win. Her caretaker report reads like a weather bulletin: extremely lively, high energy, loves pets and hugs, orbits you nonstop. Held up for her photo she grins, tongue out, holding nothing back — a puppy fresh from beating illness smiles harder than anyone.",
       more: "About 6 kg; recovered from parvo, vaccinations in progress. Whirlwind spec — best for a lively household with real playtime." }
   }
+,
+  {
+    id: "vtb7z0bzpnr5u5kg", age: "adult", size: "small", neuter: "unknown", img: "assets/dogs/d_vtb7z0bzpnr5u5kg.jpg",
+    zh: { name: "白糕", breed: "串串", gender: "弟弟", ageText: "年龄待确认", tags: ["慢热", "温柔", "胆小"],
+      story: "白糕是拍照日上最紧张的那一个:特别胆小,一进门就开始发抖,不肯出来,出来了也不肯走。照片里的他穿着粉花围脖,小小的地包天,眼睛里全是不安——9月28日被收容,还因炎症住过院,小小年纪经历的都不是容易的事。可志愿者们说过一句很对的话:胆怯不该是原罪。缩起来、发抖、不敢走,只是一只吓坏了的小狗在用自己唯一会的方式保护自己。他需要的,是一个愿意放慢脚步、不急于求成的人——等他终于确定不会再被伤害,那双不安的眼睛会亮起来的。",
+      more: "白糕约8.9公斤,疫苗驱虫进行中,曾因炎症住院(已出院)。极度胆小慢热,请给他足够的时间和安静的环境,别用热情吓到他。" },
+    en: { name: "Baigao", breed: "Mixed", gender: "Boy", ageText: "Age TBC", tags: ["Slow to warm up", "Gentle", "Timid"],
+      story: "Baigao was the most nervous soul at photo day: so timid he began trembling the moment he came in, refusing to come out — and once out, refusing to walk. In his photo he wears a pink floral collar, a tiny underbite, and eyes full of worry. Taken in on September 28, hospitalized once for inflammation — nothing about his short life has been easy. But the volunteers put it best: timidity should never be a dog original sin. Curling up, trembling, freezing — these are just a frightened puppy protecting himself the only way he knows. What he needs is someone willing to slow down and expect nothing quickly. The day he finally knows he will not be hurt again, those worried eyes will light up.",
+      more: "About 8.9 kg; vaccinations and deworming in progress; hospitalized once for inflammation, since discharged. Extremely shy — please offer quiet, patience, and zero pressure." }
+  },
+  {
+    id: "ytbi0masu0qgrd31", age: "adult", size: "medium", neuter: "no", img: "assets/dogs/d_ytbi0masu0qgrd31.jpg",
+    zh: { name: "雪诺", breed: "串串", gender: "弟弟", ageText: "年龄待确认", tags: ["慢热", "安静", "胆小"],
+      story: "照片里的雪诺戴着白蕾丝圆领和一朵红玫瑰,昂着头,像个小贵族——可现实里的他是个反差选手:很胆小,不太肯走路,牵引绳一拉就地躺下,用整只狗表达抗议。他还没绝育,最近有发情预兆,会到处标记乱尿——这些听起来头疼的毛病,其实大多是「没绝育+没安全感」的组合拳,绝育和耐心能解决大半。照片不会骗人:安静下来的雪诺,是真的好看。他需要的是一个不嫌麻烦的人,陪他把胆子一点点养大。",
+      more: "雪诺基本档案完善中(年龄体重待补),未绝育(发情期行为明显,接回建议尽快安排绝育,乱尿问题会大幅改善)。牵引绳需要从零教起,适合有耐心、有经验的家庭。" },
+    en: { name: "Snow", breed: "Mixed", gender: "Boy", ageText: "Age TBC", tags: ["Slow to warm up", "Quiet", "Timid"],
+      story: "In his photo, Snow wears a white lace ruffle with a red crochet rose, chin lifted like minor nobility — but in person he is a study in contrast: deeply shy, reluctant to walk, flopping straight down in protest at one tug of the leash. He is unneutered and currently showing hormone-driven marking behavior — troubles that sound daunting but mostly come down to one combo: not yet neutered, not yet feeling safe. Neutering plus patience solves most of it. The photo does not lie, though: a calm Snow is genuinely beautiful. He needs someone unafraid of a project — someone to help him grow his courage one small step at a time.",
+      more: "Records being completed (age and weight to come). Unneutered, with noticeable hormone-driven marking — neutering soon after adoption is strongly advised and should resolve most of it. Leash training starts from zero; best for a patient, experienced home." }
+  }
 ];
 
 const STORIES = [
