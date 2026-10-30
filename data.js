@@ -434,15 +434,6 @@ const DOGS = [
       more: "Yinghua is spayed and dewormed, with vaccinations underway (first shot June 20). Her once-severe mange has essentially healed after weeks of patient medication and baths — the redness has faded, revealing a delicate, pretty face." },
   },
   {
-    id: "hhhzl2pgaffcoqbl", age: "adult", size: "medium", neuter: "done", img: "assets/dogs/d_hhhzl2pgaffcoqbl.jpg",
-    zh: { name: "花狐", breed: "柯基", gender: "弟弟", ageText: "成犬", tags: ["慢热", "护食", "亲人"],
-      story: "花狐是个咧嘴爱笑的柯基弟弟，曾经被前主人以“会咬人”为由送进了收容所。可慢慢相处下来才发现，他其实只是有点护食，遇到压力或受到惊吓时反应会比较大，并不是真的凶。给他足够的耐心和安全感，他就会露出最灿烂的笑脸。希望有一个懂得慢慢来、愿意尊重他界限的家，接住这个被误会过的小家伙。 如今的花狐进步惊人——志愿者来拍照时，他会躺在地上露出肚皮打滚撒欢；平时爱和人也爱和狗玩，总跟在师傅身后走来走去。",
-      more: "花狐已绝育、已驱虫，疫苗正在接种中（第一、二针已完成）。因为有护食习惯，建议喂食时给他独立、安静的空间。" },
-    en: { name: "Huahu", breed: "Corgi", gender: "Boy", ageText: "Adult", tags: ["Slow to warm", "food-protective", "slow to warm up"],
-      story: "Huahu is a grinning, happy-go-lucky corgi boy who was once handed over to the shelter because his former owner claimed he \"bites.\" But as we got to know him, we realized he's simply a little protective of his food and reacts strongly when stressed or startled, not aggressive at heart. Give him patience and a sense of safety, and he'll show you his brightest smile. He's looking for a home that will take things slow and respect his boundaries, ready to embrace this once-misunderstood little guy. These days Huahu has come wonderfully far — when volunteers visit to take photos he flops over for belly rubs, and he loves trailing after his caretaker, playing happily with people and dogs alike.",
-      more: "Huahu is neutered and dewormed, with his vaccinations in progress (first and second shots completed). Since he tends to guard his food, it's best to give him his own quiet space at mealtimes." },
-  },
-  {
     id: "bxfcbge7k1eegikr", age: "adult", size: "medium", neuter: "done", urgent: true, img: "assets/dogs/d_bxfcbge7k1eegikr.jpg",
     zh: { name: "金宝", breed: "田园犬", gender: "弟弟", ageText: "成犬", tags: ["慢热", "温柔", "乖巧"],
       story: "金宝是一只一岁左右的田园犬弟弟，2025年10月被收容救助。他有点怕生，刚见面时会小心翼翼地观察，但只要给他一点时间和耐心，温柔乖巧的一面就会慢慢显露出来。他在等一个愿意慢慢靠近、不催不赶的家，用稳稳的陪伴帮他建立起对人的信任。",
